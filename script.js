@@ -1,6 +1,8 @@
+const btn = document.getElementById('action-button');
+btn.addEventListener("click", fetchMeet);
+
 function fetchMeet() 
 {
-    const btn = document.getElementById('action-button');
     btn.innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i> Fetching';
     btn.disabled = true;
     const error = document.getElementById('error-message');
