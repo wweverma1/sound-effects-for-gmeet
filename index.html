@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container mt-3" style="width: 450px;height: 600px;">
+    <div class="container mt-3" style="width: 450px;">
         <h3 class="text-center">♬ Sound Effects for Google Meet</h3>
         <hr>
-        <div class="welcome-page">
+        <div class="welcome-page" id="welcome-page">
             <button id="action-button" style="margin: 0 auto; display: block;">Detect Meet</button>
             <div class="error-box" style="text-align: center;">
                 <span id="error-message" style="color: red; font-weight: bold;">
                 </span>
             </div>
-            <!-- Temporary Message Box -->
-            <div class="success-box" style="text-align: center;">
+        </div>
+        <!-- Screen when a valid google meet is detected -->
+        <div class="meet-page" id="meet-page" style="display: none;">
+            <div class="meet-code" style="text-align: center;">
                 <span id="success-message" style="color: green; font-weight: bold;">
                 </span>
             </div>
         </div>
-        <!-- Screen when a valid google meet is detected -->
-        <!--
-            <div class="meet-page">
-            </div>
-         -->
+        <hr>
+        <p align="center">
+            Developed with ❤️ in India 🇮🇳 
+        </p>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>
 </html>

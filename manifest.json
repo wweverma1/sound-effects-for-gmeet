@@ -4,8 +4,14 @@
     "description": "This extension enables you to play some cool sound effects at the perfect time while you're in a google meet.",
     "manifest_version": 3,
     "author": "Aditya Verma",
-    "action":{
+    "action": {
         "default_popup": "index.html",
         "default_title": "Sound Effects for Google Meet"
+    },
+    "permissions": ["tabs"],
+    "icons": {
+        "16": "img/logo.png",
+        "48": "img/logo.png",
+        "128": "img/logo.png"
     }
 }
