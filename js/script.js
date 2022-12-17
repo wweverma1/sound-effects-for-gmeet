@@ -1,6 +1,42 @@
 const btn = document.getElementById('action-button');
 btn.addEventListener("click", validateMeet);
 
+document.getElementById('messi').onclick = function() {
+    soundEffect('messi');
+}
+
+document.getElementById('messi-goal').onclick = function() {
+    soundEffect('messi-goal');
+}
+
+document.getElementById('heartbeat').onclick = function() {
+    soundEffect('heartbeat');
+}
+
+document.getElementById('crowd').onclick = function() {
+    soundEffect('crowd');
+}
+
+document.getElementById('party-horn').onclick = function() {
+    soundEffect('party-horn');
+}
+
+document.getElementById('air-horn').onclick = function() {
+    soundEffect('air-horn');
+}
+
+document.getElementById('goal').onclick = function() {
+    soundEffect('goal');
+}
+
+document.getElementById('applause').onclick = function() {
+    soundEffect('applause');
+}
+
+document.getElementById('siuuu').onclick = function() {
+    soundEffect('siuuu');
+}
+
 async function validateMeet() 
 {
     btn.disabled = true;
@@ -25,6 +61,11 @@ function meetControls(meetCode)
 {
     document.getElementById('welcome-page').style.display = "none";
     document.getElementById('meet-page').style.display = "block";
-    const success = document.getElementById('success-message');
-    success.innerHTML = meetCode;
+}
+
+
+function soundEffect(effectName)
+{
+    var audio = new Audio("audio/"+effectName+".wav");
+    audio.play();
 }

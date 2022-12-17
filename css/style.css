@@ -1,0 +1,46 @@
+.container {
+    width: 450px;
+}
+
+.welcome-page #action-button {
+    margin: 0 auto; 
+    display: block;
+}
+
+.error-box {
+    text-align: center;
+}
+
+.error-box #error-message {
+    color: red; 
+    font-weight: bold;
+}
+
+.meet-page {
+    display: none;
+}
+
+.meet-controls {
+    border: 1px solid grey; 
+    border-radius: 8px; 
+    padding: 10px;
+}
+
+.meet-controls .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.meet-controls .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.footer p {
+    text-align: center;
+}
